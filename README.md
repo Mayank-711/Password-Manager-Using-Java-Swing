@@ -23,3 +23,6 @@ A password manager application built with Java Swing that focuses on user privac
 ## Usage
 - Register as a new user and set up your master password.
 - Start managing your passwords securely.
+
+## Contributions
+I welcome contributions from the open-source community. Feel free to submit bug reports, feature requests, or contribute to the development of this project.
