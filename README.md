@@ -21,8 +21,21 @@ A password manager application built with Java Swing that focuses on user privac
 - **Password Decryption**: Users can decrypt stored passwords when needed. Decryption requires the master password.
 
 ## Usage
+- Need to add the background image on your own
+- Need to create a database with two tables (one for registration & users,other one for storing password)
 - Register as a new user and set up your master password.
 - Start managing your passwords securely.
 
 ## Contributions
 I welcome contributions from the open-source community. Feel free to submit bug reports, feature requests, or contribute to the development of this project.
+
+## Screenshots
+![Screenshot (33)](https://github.com/Mayank-711/Password-Manager-Using-Java-Swing/assets/148845605/adc8efab-132c-46f4-81c3-0a29d072d98e)
+![Screenshot (32)](https://github.com/Mayank-711/Password-Manager-Using-Java-Swing/assets/148845605/1f558c5d-9571-4c3c-af36-436d9c5975e6)
+![Screenshot (35)](https://github.com/Mayank-711/Password-Manager-Using-Java-Swing/assets/148845605/dfc96ad7-0709-4632-ae49-4092cbebc2a1)
+![Screenshot (37)](https://github.com/Mayank-711/Password-Manager-Using-Java-Swing/assets/148845605/907b59c4-76cf-49a1-9c62-f98930db7979)
+![Screenshot (36)](https://github.com/Mayank-711/Password-Manager-Using-Java-Swing/assets/148845605/3e577093-0236-4364-88ff-11f5f56f4a9a)
+![Screenshot (40)](https://github.com/Mayank-711/Password-Manager-Using-Java-Swing/assets/148845605/145ed2ba-97a2-4f44-ae36-068c082b2b8c)
+![Screenshot (39)](https://github.com/Mayank-711/Password-Manager-Using-Java-Swing/assets/148845605/ba2005a2-3895-4531-8500-a16a2e02f0d3)
+![Screenshot (34)](https://github.com/Mayank-711/Password-Manager-Using-Java-Swing/assets/148845605/275856cd-d4a6-4978-b64c-77323e5f6437)
+![Screenshot (38)](https://github.com/Mayank-711/Password-Manager-Using-Java-Swing/assets/148845605/e3cd8056-0a02-4c98-9d3b-91c0c2dad611)
