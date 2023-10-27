@@ -262,7 +262,7 @@ public class PasswordPage extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel4MouseClicked
 
     /**
-     * @Mayank args the command line arguments
+     * @param args the command line arguments
      */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */

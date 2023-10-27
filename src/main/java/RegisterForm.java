@@ -17,7 +17,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author MAYANK
+ * @author MAYANK MISHRA
  */
 public class RegisterForm extends javax.swing.JFrame {
 
@@ -26,28 +26,6 @@ public class RegisterForm extends javax.swing.JFrame {
      */
     public RegisterForm() {
         initComponents();
-//        try{ 
-//            java.sql.Connection con = Connectionprovider.getCon();
-//            java.sql.Statement st = con.createStatement();
-//            ResultSet rs = st.executeQuery("SELECT * from idusnewjava");
-////Statement st =  con.createStatement();
-////ResultSet rs =  st.executeQuery("select count(id) from password_manger");
-//            
-//            if (rs.next())
-//            {
-//                int id = rs.getInt(1);
-//                id = id+1;
-//                String str = String.valueOf(id);
-//                jLabel6.setText(str);
-//            }
-//            else {
-//                jLabel6.setText("1");}
-//            }
-//        catch(Exception e){
-//                JFrame jf = new JFrame();
-//                jf.setAlwaysOnTop(true);
-//                JOptionPane.showMessageDialog(jf,e);
-//                }
     }
     
     /**
@@ -308,10 +286,7 @@ public class RegisterForm extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel3MouseClicked
 
     private void jButtonRegisterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRegisterActionPerformed
-//String FirstName = jTextField6.getText();
-//String LastName = jTextField2.getText();
-//String Username = jTextField5.getText();
-//String Password = jPasswordField1.getText();
+
         if (verifData())
         {
             Connection con = null;
@@ -342,35 +317,7 @@ public class RegisterForm extends javax.swing.JFrame {
             jf.setAlwaysOnTop(true);
             JOptionPane.showMessageDialog(jf, e);
             }  
-        }       
-
-//        Connection con = null;
-//        try {
-//            con = Connectionprovider.getCon();
-//        } catch (ClassNotFoundException | SQLException ex) {
-//            Logger.getLogger(RegisterForm.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//        PreparedStatement ps;
-//        
-//        try{
-//            ps = con.prepareStatement("INSERT INTO `user`(`fname`, `lname`, `username`, `password`) VALUES (?,?,?,?)");
-//            ps.setString(1,jTextField6.getText()); 
-//            ps.setString(2,jTextField2.getText());
-//            ps.setString(3,jTextField5.getText());
-//            ps.setString(4,String.valueOf(jPasswordField1.getPassword()));
-//            ps.executeUpdate();
-//            JFrame jf = new JFrame();
-//            jf.setAlwaysOnTop(true);
-//            JOptionPane.showMessageDialog(jf, "succesfully updated");
-//            setVisible(false);
-//            new RegisterForm().setVisible(true);
-//        }
-//    java.sql.Connection con = Connectionprovider.getCon();
-//    java.sql.PreparedStatement ps = con.prepareStatement("INSERT INTO user values(?,?,?,?)");
-//    ps.setString(1,ID);
-    
-  
-                
+        }                    
     }//GEN-LAST:event_jButtonRegisterActionPerformed
 
      public boolean verifData(){
@@ -419,7 +366,7 @@ public class RegisterForm extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField6ActionPerformed
 
     /**
-     * @mayank args the command line arguments
+     * @param args the command line arguments
      */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -477,13 +424,7 @@ public class RegisterForm extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField6;
     // End of variables declaration//GEN-END:variables
 
-    private Object getText() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-          
-//    private void initComponents() {
-//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-//    }
+
 
 }
 

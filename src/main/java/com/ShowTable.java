@@ -188,19 +188,7 @@ public class ShowTable extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jLabel4KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jLabel4KeyReleased
-//        try{ 
-//            String searchTemp = jLabel4.getText() + "%";
-//            java.sql.Connection con = Connectionprovider.getCon();
-//            java.sql.Statement st = con.createStatement();
-//            ResultSet rs = st.executeQuery("SELECT * FROM idusnewjava WHERE username LIKE '"+searchTemp+"'");
-//            jTable1.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
-//            jTable1.setModel(DbUtils.resultSetToTableModel(rs));
-//            }
-//            catch(Exception e){
-//                JFrame jf = new JFrame();
-//                jf.setAlwaysOnTop(true);
-//                JOptionPane.showMessageDialog(jf,e);
-//            }
+
     }//GEN-LAST:event_jLabel4KeyReleased
 
     private void jTextField4KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField4KeyReleased
@@ -223,44 +211,7 @@ public class ShowTable extends javax.swing.JFrame {
             jTable1.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
             jTable1.setModel(DbUtils.resultSetToTableModel(rs));
             }
-            catch(Exception e){
-//                JFrame jf = new JFrame();
-//                jf.setAlwaysOnTop(true);
-//                JOptionPane.showMessageDialog(jf,e);
-//        try{ 
-//            String searchTemp = jLabel4.getText() + "%";
-//            java.sql.Connection con = Connectionprovider.getCon();
-//            java.sql.Statement st = con.createStatement();
-//            
-//            ResultSet rs = st.executeQuery("SELECT * FROM idusnewjava WHERE username LIKE '"+searchTemp+"'");
-//            
-//            ResultSetMetaData data = rs.getMetaData();
-//            int sp = data.getColumnCount();
-//            
-//            DefaultTableModel tableRecords = (DefaultTableModel)jTable1.getModel();
-//            tableRecords.setRowCount (0);
-//            while(rs.next())
-//            {
-//                Vector columnData = new Vector();
-//                int z;
-//                for(z=1; z<=sp; z++)
-//                {
-//                    columnData.add(rs.getShort("srno"));
-//                    columnData.add(rs.getShort("username"));
-//                    columnData.add(rs.getShort("pwd"));
-//                    columnData.add(rs.getShort("app"));
-//                }
-//                tableRecords.addRow(columnData);
-//            }    
-////            jTable1.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
-////            jTable1.setModel(DbUtils.resultSetToTableModel(rs));
-//            }
-//            catch(Exception e)
-//            {
-////                JFrame jf = new JFrame();
-////                jf.setAlwaysOnTop(true);
-//                JOptionPane.showMessageDialog(null ,e);
-//                
+            catch(Exception e){               
             }
     }//GEN-LAST:event_jTextField4KeyReleased
 

@@ -273,18 +273,7 @@ public class LoginForm extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel3MouseClicked
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-//      try {
-            //        if(jTextField1.getText().equals("Notes") && jPasswordField1.getText().equals("pass"))
-//      {
-//          setVisible(false);
-//          new HomePage().setVisible(true);
-//      }
-//      
-//      else
-//      {
-//          ImageIcon icon=new ImageIcon("Incorrect password.PNG");
-//          JOptionPane.showMessageDialog(null,"<html><b style=\"colour : red; font-size: 10px\">Incorrect <br>Username or Password</b></html>", "Show",JOptionPane.INFORMATION_MESSAGE,icon);
-//      }
+
 String Username = LoginUsername.getText();
 String Password = jPasswordField1.getText();
 
@@ -353,7 +342,7 @@ String Password = jPasswordField1.getText();
     }//GEN-LAST:event_jCheckBox1ActionPerformed
 
     /**
-     * @Mayank args the command line arguments
+     * @param args the command line arguments
      */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */

@@ -18,28 +18,6 @@ public class AddPass1 extends javax.swing.JFrame {
         initComponents();
         jLabel6.setText(Luser);
         jLabel6.setVisible(true);
-//        try{ 
-//            java.sql.Connection con = Connectionprovider.getCon();
-//            java.sql.Statement st = con.createStatement();
-//            ResultSet rs = st.executeQuery("SELECT * from idusnewjava");
-////Statement st =  con.createStatement();
-////ResultSet rs =  st.executeQuery("select count(id) from password_manger");
-//            
-//            if (rs.next())
-//            {
-//                int id = rs.getInt(1);
-//                id = id+1;
-//                String str = String.valueOf(id);
-//                jLabel6.setText(str);
-//            }
-//            else {
-//                jLabel6.setText("1");}
-//            }
-//        catch(Exception e){
-//                JFrame jf = new JFrame();
-//                jf.setAlwaysOnTop(true);
-//                JOptionPane.showMessageDialog(jf,e);
-//                }
     }
 
 
@@ -168,10 +146,7 @@ public class AddPass1 extends javax.swing.JFrame {
 
   
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-//String id = jLabel6.getText();
-//String Username = jTextField1.getText();
-//String Password = jTextField2.getText();
-//String Description = jTextField3.getText();
+
                 String plaintext = jTextField2.getText();
                 BigInteger plaintextValue = new BigInteger(plaintext.getBytes());
                 BigInteger encryptedValue = plaintextValue.add(BigInteger.valueOf(5));
@@ -201,9 +176,6 @@ public class AddPass1 extends javax.swing.JFrame {
             ap2.setLocationRelativeTo(null);
         }
         
-//    java.sql.PreparedStatement ps = con.prepareStatement("INSERT INTO idusnewjava values(?,?,?,?)");
-    
-//    ps.setString(1,id); 
     
 catch(Exception e )
         {JFrame jf = new JFrame();
