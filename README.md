@@ -20,6 +20,11 @@ A password manager application built with Java Swing that focuses on user privac
 
 - **Password Decryption**: Users can decrypt stored passwords when needed. Decryption requires the master password.
 
+## Technologies Used
+- Java Swing for the graphical user interface.
+- MySQL for database management.
+- NetBeans IDE for development.
+
 ## Usage
 - Need to add the background image on your own
 - Need to create a database with two tables (one for registration & users,other one for storing password)
