@@ -155,10 +155,9 @@ public class EncryptPage extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-               String encryptedText = jTextField1.getText();
-                BigInteger encryptedValue = new BigInteger(encryptedText);
-                BigInteger decryptedValue = encryptedValue.subtract(BigInteger.valueOf(5));
-                jTextField2.setText(new String(decryptedValue.toByteArray()));                      // TODO add your handling code here:
+                 String input = jTextField1.getText();
+            String decrypted = decrypt(input);
+            jTextField2.setText(decrypted);         // TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
@@ -206,6 +205,29 @@ public class EncryptPage extends javax.swing.JFrame {
                 new EncryptPage().setVisible(true);
             }
         });
+    }
+private String decrypt(String input) {
+        int key = 3;
+        StringBuilder decryptedText = new StringBuilder();
+
+        for (int i = 0; i < input.length(); i++) {
+            char currentChar = input.charAt(i);
+
+            if (Character.isUpperCase(currentChar)) {
+                char decryptedChar = (char) (((currentChar - 'A' - key + 26) % 26) + 'A');
+                decryptedText.append(decryptedChar);
+            } else if (Character.isLowerCase(currentChar)) {
+                char decryptedChar = (char) (((currentChar - 'a' - key + 26) % 26) + 'a');
+                decryptedText.append(decryptedChar);
+            } else if (Character.isDigit(currentChar)) {
+                char decryptedChar = (char) (((currentChar - '0' - key + 10) % 10) + '0');
+                decryptedText.append(decryptedChar);
+            } else {
+                decryptedText.append(currentChar);
+            }
+        }
+
+        return decryptedText.toString();
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

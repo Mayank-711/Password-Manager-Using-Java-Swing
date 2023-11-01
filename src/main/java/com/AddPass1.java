@@ -146,11 +146,9 @@ public class AddPass1 extends javax.swing.JFrame {
 
   
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-
-                String plaintext = jTextField2.getText();
-                BigInteger plaintextValue = new BigInteger(plaintext.getBytes());
-                BigInteger encryptedValue = plaintextValue.add(BigInteger.valueOf(5));
-                jLabel7.setText(encryptedValue.toString()); 
+                String input = jTextField2.getText();
+            String encrypted = encrypt(input);
+            jLabel7.setText(encrypted);
         Connection con = null;
         try {
             con = Connectionprovider.getCon();
@@ -228,6 +226,29 @@ catch(Exception e )
                 new AddPass1().setVisible(true);
             }
         });
+    }
+     private String encrypt(String input) {
+        int key = 3; // Example key, can be changed as needed
+        StringBuilder encryptedText = new StringBuilder();
+
+        for (int i = 0; i < input.length(); i++) {
+            char currentChar = input.charAt(i);
+
+            if (Character.isUpperCase(currentChar)) {
+                char encryptedChar = (char) (((currentChar - 'A' + key) % 26) + 'A');
+                encryptedText.append(encryptedChar);
+            } else if (Character.isLowerCase(currentChar)) {
+                char encryptedChar = (char) (((currentChar - 'a' + key) % 26) + 'a');
+                encryptedText.append(encryptedChar);
+            } else if (Character.isDigit(currentChar)) {
+                char encryptedChar = (char) (((currentChar - '0' + key) % 10) + '0');
+                encryptedText.append(encryptedChar);
+            } else {
+                encryptedText.append(currentChar);
+            }
+        }
+
+        return encryptedText.toString();
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
